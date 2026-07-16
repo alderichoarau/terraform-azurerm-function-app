@@ -43,6 +43,8 @@ resource "azurerm_linux_function_app" "fn" {
     application_stack {
       python_version = var.python_version
     }
+    health_check_path                 = "/api/http_trigger"
+    health_check_eviction_time_in_min = 10
   }
 
   tags = var.tags
