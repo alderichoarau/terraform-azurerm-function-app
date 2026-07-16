@@ -39,6 +39,12 @@ variable "python_version" {
   default     = "3.11"
 }
 
+variable "app_settings" {
+  description = "Application settings merged with the module's defaults"
+  type        = map(string)
+  default     = {}
+}
+
 variable "tags" {
   description = "Tags applied to all resources in this module"
   type        = map(string)

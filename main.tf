@@ -47,7 +47,8 @@ resource "azurerm_linux_function_app" "fn" {
     health_check_eviction_time_in_min = 10
   }
 
-  tags = var.tags
+  app_settings = var.app_settings
+  tags         = var.tags
 }
 
 resource "azurerm_role_assignment" "fn_storage_blob" {

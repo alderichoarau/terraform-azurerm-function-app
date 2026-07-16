@@ -57,6 +57,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
+| app\_settings | Application settings merged with the module's defaults | `map(string)` | `{}` | no |
 | location | Azure region for the Function App and its dedicated storage account | `string` | n/a | yes |
 | name | Name of the Linux Function App | `string` | n/a | yes |
 | python\_version | Python runtime version for the Function App stack | `string` | `"3.11"` | no |
