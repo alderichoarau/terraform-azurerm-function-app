@@ -10,7 +10,8 @@ The module does not create or manage the App Service Plan — pass an existing `
 
 ```hcl
 module "function_app" {
-  source = "github.com/alderichoarau/terraform-azurerm-function-app"
+  source  = "app.terraform.io/alderic-hoarau/function-app/azurerm"
+  version = "~> 0.1"
 
   name                  = "fn-my-project"
   storage_account_name  = "stfnmyproject"

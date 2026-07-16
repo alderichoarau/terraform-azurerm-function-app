@@ -26,7 +26,8 @@ resource "azurerm_service_plan" "example" {
 }
 
 module "function_app" {
-  source = "github.com/alderichoarau/terraform-azurerm-function-app"
+  source  = "app.terraform.io/alderic-hoarau/function-app/azurerm"
+  version = "~> 0.1"
 
   name                 = "fn-example"
   storage_account_name = "stfnexample"
